@@ -17,7 +17,7 @@
             <h1 class="text-xl">Browse<span class="text-yellow-300">4</span>Pets</h1>
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex gap-8">
             <div><a href="">Find a pet</a></div>
             <div><a href="">Breeds</a></div>
             <div><a href="">Contact Us</a></div>
@@ -37,14 +37,18 @@
         </div>
     </header>
     <div class="p-16">
-        <div class="bg-[url('c1-assets/cat-big.png')] bg-cover h-full bg-center">
-            <h1 class="font-extrabold p-2 text-3xl">Pamper Your Pet, Because They Deserve the Best</h1>
-            <p class="p-2">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
-                and make
-                tails wag with joy!</p>
-            <button type="button"
-                class="text-black p-2 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Find
-                a pet</button>
+        <div class="px-30 bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-right-bottom h-[35rem] bg-contain">
+            <div class="w-[50%]">
+                <h1 class=" font-extrabold p-2 text-3xl">Pamper Your Pet, Because They Deserve the Best</h1>
+                <p class="p-2">Discover a world of treats, toys, and essentials handpicked for your furry friends.
+                    Shop
+                    now
+                    and make
+                    tails wag with joy!</p>
+                <button type="button"
+                    class="text-black p-2 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Find
+                    a pet</button>
+            </div>
         </div>
     </div>
     <div class="p-16">
@@ -92,15 +96,20 @@
         <h1 class="font-extrabold text-2xl mb-8">Trending Pet Products</h1>
         <div class="flex gap-8 h-fit">
             <div class="flex m-auto">
-                <div class="p-8 flex flex-col gap-4 bg-amber-200 rounded-sm">
-                    <h1 class="font-extrabold text-2xl ">T-shirts for dogs</h1>
-                    <p>Discover a world of treats, toys and essentials handpicked for
-                    </p>
-                    <button type="button"
-                        class="text-black w-2/4 hover:text-white bg-white hover:bg-yellow-500 font-medium rounded-lg text-sm px-7 py-2.5 text-center me-2 mb-2">Shop
-                        Now</button>
+
+                <div class="p-8 flex h-[30rem] m-2 flex-col gap-4 bg-amber-200 rounded-xl bg-[url('c1-assets/cute-pet-mid.png')]
+                    bg-no-repeat bg-right-bottom h-[20rem] ">
+                    <div class="text-wrap m-1 items-center justify-center">
+                        <h1 class="font-extrabold text-2xl ">T-shirts for dogs</h1>
+                        <p class="w-full">Discover a world of treats, toys and essentials handpicked for
+                        </p>
+                        <button type="button"
+                            class="text-black w-2/4 hover:text-white bg-white hover:bg-yellow-500 font-medium rounded-lg text-sm px-7 py-2.5 text-center me-2 mb-2">Shop
+                            Now</button>
+                    </div>
                 </div>
-                <div class="grid grid-cols-3 grid-rows-3 m-16">
+
+                <div class="grid grid-cols-3 grid-rows-3 m-2">
                     <div
                         class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
                         <img src="c1-assets/dog-cartoon.png" alt="dog">
@@ -213,12 +222,12 @@
             </div>
         </div>
     </div>
-    <div class="p-16">
-        <h1 class="font-extrabold text-2xl mb-8">
+    <div class=" p-16 m-auto h-auto">
+        <h1 class="font-extrabold text-2xl mb-8 text-center w-full">
             Everyday low price
         </h1>
-        <div class="flex flex-row justify-between w-full h-auto">
-            <div class="flex flex-row rounded-sm bg-linear-to-bl from-violet-300 to-fuchsia-500">
+        <div class="flex p-16 justify-center items-stretch flex-row gap-6 m-auto w-full h-auto">
+            <div class="flex flex-row h-full rounded-sm w-auto bg-linear-to-bl from-violet-300 to-fuchsia-500">
                 <div class="flex flex-col justify-center pl-14">
                     <p>
                         Under Price
@@ -227,54 +236,70 @@
                         Pet grooming mitt
                     </p>
                     <p class="text-white font-bold">
-                        Easy hair removal
+                        (Easy hair removal)
                     </p>
                     <p class="text-3xl font-extrabold">
                         $7.99
                     </p>
                 </div>
-                <div>
-                    <img src=" c1-assets/cute-dog-mid.png" alt="cute dog">
+                <div class="h-full">
+                    <img src=" c1-assets/cute-dog-mid.png" alt="cute dog" class="object-cover">
                 </div>
             </div>
-            <div class="flex rounded-sm flex-col bg-linear-to-bl from-orange-100 to-yellow-200">
+            <div class="flex h-full rounded-sm flex-row w-auto bg-linear-to-bl from-orange-100 to-yellow-200">
                 <div class="flex flex-col justify-center pl-14">
                     <h1 class="font-extrabold">T-shirts for dogs</h1>
                     <p class="text-yellow-300 text-3xl font-extrabold">$ 7.99</p>
                 </div>
-                <div>
-                    <img src="c1-assets/cute-pet-mid.png" alt="cute pet">
+                <div class="h-full">
+                    <img src="c1-assets/cute-pet-mid.png" alt="cute pet" class="object-cover">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="bg-amber-200 mt-20 w-full h-60% p-20 text-black flex flex-row justify-between items-center">
-            <div class="flex flex-col">
-                <div class="flex flex-row gap-2">
-                    <img class="grayscale" src="c1-assets/logo-header.png" alt="paw logo">
-                    <h1 class="text-xl">Browse<span class="text-yellow-300">4</span>Pets</h1>
-                </div>
-                <p class="text-l">
-                    Discover a world of treats, toys, and essentials handpicked for your furry friends
-                </p>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <div><a href="">Find a pet</a></div>
-                <div><a href="">Breeds</a></div>
-                <div><a href="">Contact Us</a></div>
-            </div>
-
-            <div class="flex flex-col">
-                <p>Follow Us</p>
-                <div class="flex flex-row gap-2">
-                    <div><i class="fa-brands fa-facebook"></i></div>
-                    <div><i class="fa-brands fa-instagram"></i></div>
-                    <div><i class="fa-brands fa-linkedin"></i></div>
-                    <div><i class="fa-brands fa-youtube"></i></div>
-                </div>
-            </div>
+    <div class="relative grid grid-cols-2 p-16 rounded-lg">
+        <div class="m-auto">
+            <img src="c1-assets/cute-pet-mid.png" alt="">
         </div>
+        <div class="flex gap-5 flex-col">
+            <h1 class="font-extrabold text-2xl">Get pawsome News!</h1>
+            <p class="">Exclusive training tips, ticks, product deals and more.</p>
+            <input class="text-gray-400" placeholder="Enter email...">
+            <button type="button"
+                class=" text-black w-[10rem] text-l bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Subscribe</button>
+        </div>
+    </div>
 </body>
+
+<footer>
+    <div class="bg-amber-200 absolute mt-20 w-full h-60% p-50 text-black  flex flex-row justify-between items-center">
+        <div class="flex flex-col">
+            <div class="flex flex-row gap-2 text-center items-center">
+                <img src="c1-assets/logo-footer.png" alt="paw logo">
+                <h1 class="text-xl">Browse<span class="text-yellow-300">4</span>Pets</h1>
+            </div>
+            <p class="text-l">
+                Discover a world of treats, toys, and essentials handpicked for your furry friends
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <div><a href="">Find a pet</a></div>
+            <div><a href="">Breeds</a></div>
+            <div><a href="">Contact Us</a></div>
+        </div>
+
+        <div class="flex flex-col">
+            <p>Follow Us</p>
+            <div class="flex flex-row gap-2">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-linkedin"></i></div>
+                <div><i class="fa-brands fa-youtube"></i></div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
