@@ -11,19 +11,20 @@
 </head>
 
 <body>
-    <header class="flex justify-between items-center px-16 py-4 bg-[rgb(255,249,244)]">
-        <div class="flex gap-2 justify-between items-center">
-            <img src="c1-assets/logo-header.png" alt="paw logo">
-            <h1 class="text-xl">Browse<span class="text-yellow-300">4</span>Pets</h1>
+    <header
+        class="flex justify-between border-b-1 border-black items-center lg:border-b-0 px-4 lg:px-16 py-4 bg-[rgb(255,249,244)]">
+        <div class="flex p-4 gap-2 justify-between items-center">
+            <img class="" src="c1-assets/logo-header.png" alt="paw logo">
+            <h1 class="hidden lg:text-xl">Browse<span class="text-yellow-300">4</span>Pets</h1>
         </div>
 
-        <div class="flex gap-8">
+        <div class="hidden lg:flex gap-8">
             <div><a href="">Find a pet</a></div>
             <div><a href="">Breeds</a></div>
             <div><a href="">Contact Us</a></div>
         </div>
 
-        <div class="flex justify-between items-center gap-4">
+        <div class="hidden lg:flex lg:justify-between lg:items-center lg:gap-4">
             <div class="flex gap-2">
                 <i class="fa-regular fa-bell"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -34,11 +35,18 @@
                 <button type="button"
                     class=" text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Register</button>
             </div>
+
+        </div>
+        <div class="lg:hidden block h-10 w-10 mr-6">
+            <span class=" block border-b-2 p-1 border-black rounded-sm"> </span>
+            <span class=" block border-b-2 p-1 border-black rounded-sm"></span>
+            <span class=" block border-b-2 p-1 border-black rounded-sm"></span>
         </div>
     </header>
-    <div class="p-16">
-        <div class="px-30 bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-right-bottom h-[35rem] bg-contain">
-            <div class="w-[50%]">
+    <div class="p-6 w-full lg:p-16">
+        <div
+            class="lg:px-30 bg-[url('c1-assets/cat-big.png')] sm:flex sm:flex-col h-[25rem] sm:text-justify sm:w-auto bg-no-repeat bg-right-bottom lg:h-[35rem] bg-contain">
+            <div class="lg:w-[50%] w-[60%]">
                 <h1 class=" font-extrabold p-2 text-3xl">Pamper Your Pet, Because They Deserve the Best</h1>
                 <p class="p-2">Discover a world of treats, toys, and essentials handpicked for your furry friends.
                     Shop
@@ -51,40 +59,40 @@
             </div>
         </div>
     </div>
-    <div class="p-16">
+    <div class="p-6 w-full lg:p-16">
         <h1 class="font-extrabold text-2xl mb-8">Browse By Categories</h1>
-        <div class="grid grid-cols-6 gap-4">
+        <div class="grid gap-4 grid-cols-2 lg:grid-cols-6 lg:gap-4">
             <div class="flex flex-col justify-center items-center py-6 rounded-xl bg-amber-200">
                 <img src="c1-assets/dog-cartoon.png" alt="dog">
                 <h1>Dog</h1>
                 <p>3 items</p>
                 </img>
             </div>
-            <div class="flex flex-col justify-center items-center rounded-xl bg-amber-200">
+            <div class="flex flex-col justify-center items-center  py-6 rounded-xl bg-amber-200">
                 <img src="c1-assets/fish-cartoon.png" alt="fish">
                 <h1>Fish</h1>
                 <p>3 items</p>
                 </img>
             </div>
-            <div class="flex flex-col justify-center items-center rounded-xl bg-amber-200">
+            <div class="flex flex-col justify-center items-center  py-6 rounded-xl bg-amber-200">
                 <img src="c1-assets/cat-cartoon.png" alt="kitty">
                 <h1>Cat</h1>
                 <p>3 items</p>
                 </img>
             </div>
-            <div class="flex flex-col justify-center items-center rounded-xl bg-amber-200">
+            <div class="flex flex-col justify-center items-center py-6 rounded-xl bg-amber-200">
                 <img src="c1-assets/bird-cartoon.png" alt="bird">
                 <h1>Birds</h1>
                 <p>3 items</p>
                 </img>
             </div>
-            <div class="flex flex-col justify-center items-center rounded-xl bg-amber-200">
+            <div class="flex flex-col justify-center items-center  py-6 rounded-xl bg-amber-200">
                 <img src="c1-assets/mouse-cartoon.png" alt="rat">
                 <h1>Small pet</h1>
                 <p>3 items</p>
                 </img>
             </div>
-            <div class="flex flex-col justify-center items-center rounded-xl bg-amber-200">
+            <div class="flex flex-col justify-center items-center  py-6 rounded-xl bg-amber-200">
                 <img src="c1-assets/rabbit-cartoon.png" alt="rabit">
                 <h1>Rabit</h1>
                 <p>2 items</p>
@@ -92,29 +100,29 @@
             </div>
         </div>
     </div>
-    <div class="p-16 bg-slate-100">
+    <div class="lg:p16 p-4 bg-slate-100">
         <h1 class="font-extrabold text-2xl mb-8">Trending Pet Products</h1>
         <div class="flex gap-8 h-fit">
-            <div class="flex m-auto">
+            <div class="flex flex-col m-auto">
 
-                <div class="p-8 flex h-[30rem] m-2 flex-col gap-4 bg-amber-200 rounded-xl bg-[url('c1-assets/cute-pet-mid.png')]
-                    bg-no-repeat bg-right-bottom h-[20rem] ">
+                <div class="p-8 flex  m-2 flex-col gap-4 bg-amber-200 rounded-xl bg-[url('c1-assets/cute-pet-small.png')]
+                    bg-no-repeat bg-right-bottom h-[24rem] ">
                     <div class="text-wrap m-1 items-center justify-center">
                         <h1 class="font-extrabold text-2xl ">T-shirts for dogs</h1>
                         <p class="w-full">Discover a world of treats, toys and essentials handpicked for
                         </p>
                         <button type="button"
-                            class="text-black w-2/4 hover:text-white bg-white hover:bg-yellow-500 font-medium rounded-lg text-sm px-7 py-2.5 text-center me-2 mb-2">Shop
+                            class="text-black w-2/4 hover:text-white bg-white hover:bg-yellow-500 font-medium rounded-lg text-sm px-7 py-2.5 text-center lg:me-2 lg:mb-2">Shop
                             Now</button>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-3 grid-rows-3 m-2">
+                <div class="grid grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 m-2">
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 px-0 lg:py-1 m-2 rounded-sm">
                         <img src="c1-assets/dog-cartoon.png" alt="dog">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -123,10 +131,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 lg:py-1 m-2 rounded-sm">
                         <img src="c1-assets/fish-cartoon.png" alt="fish">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -135,10 +143,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/bird-cartoon.png" alt="bird">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -147,10 +155,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/rabbit-cartoon.png" alt="rabbit">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -159,10 +167,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/bird-cartoon.png" alt="bird">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -171,10 +179,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/pet-couch.png" alt="pet">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -183,10 +191,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/fish-cartoon.png" alt="fish">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -195,10 +203,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/pet-couch.png" alt="pet">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -207,10 +215,10 @@
                         </div>
                     </div>
                     <div
-                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 px-12 py-1 m-4 rounded-sm">
+                        class="flex flex-row justify-center items-center bg-white border-1 border-slate-200 lg:px-12 py-1 m-2 rounded-sm">
                         <img src="c1-assets/rabbit-cartoon.png" alt="rabbit">
                         <div class="flex flex-col m-6">
-                            <div class="flex flex-row justify-center items-center gap-4">
+                            <div class="flex flex-row justify-center items-center gap-3">
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <p>4.5</p>
                             </div>
@@ -226,8 +234,8 @@
         <h1 class="font-extrabold text-2xl mb-8 text-center w-full">
             Everyday low price
         </h1>
-        <div class="flex p-16 justify-center items-stretch flex-row gap-6 m-auto w-full h-auto">
-            <div class="flex flex-row h-full rounded-sm w-auto bg-linear-to-bl from-violet-300 to-fuchsia-500">
+        <div class="flex flex-col lg:flex-row lg:p-16 justify-center items-stretch gap-6 m-auto w-full h-auto">
+            <div class="flex flex-row p-5 h-full rounded-sm w-auto bg-linear-to-bl from-violet-300 to-fuchsia-500">
                 <div class="flex flex-col justify-center pl-14">
                     <p>
                         Under Price
@@ -246,7 +254,7 @@
                     <img src=" c1-assets/cute-dog-mid.png" alt="cute dog" class="object-cover">
                 </div>
             </div>
-            <div class="flex h-full rounded-sm flex-row w-auto bg-linear-to-bl from-orange-100 to-yellow-200">
+            <div class="flex h-full p-5 rounded-sm flex-row w-auto bg-linear-to-bl from-orange-100 to-yellow-200">
                 <div class="flex flex-col justify-center pl-14">
                     <h1 class="font-extrabold">T-shirts for dogs</h1>
                     <p class="text-yellow-300 text-3xl font-extrabold">$ 7.99</p>
@@ -258,7 +266,11 @@
         </div>
     </div>
 
-    <div class="relative grid grid-cols-2 p-16 rounded-lg">
+
+</body>
+
+<footer>
+    <div class=" mx-10 z-10 bg-white grid grid-cols-1 lg:grid-cols-2 p-16 rounded-lg">
         <div class="m-auto">
             <img src="c1-assets/cute-pet-mid.png" alt="">
         </div>
@@ -270,10 +282,8 @@
                 class=" text-black w-[10rem] text-l bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Subscribe</button>
         </div>
     </div>
-</body>
-
-<footer>
-    <div class="bg-amber-200 absolute mt-20 w-full h-60% p-50 text-black  flex flex-row justify-between items-center">
+    <div
+        class="bg-amber-200 p-10 gap-2 h-full w-full lg:p-50 text-black flex flex-col lg:flex-row justify-between lg:items-center">
         <div class="flex flex-col">
             <div class="flex flex-row gap-2 text-center items-center">
                 <img src="c1-assets/logo-footer.png" alt="paw logo">
@@ -284,7 +294,7 @@
             </p>
         </div>
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col  gap-4">
             <div><a href="">Find a pet</a></div>
             <div><a href="">Breeds</a></div>
             <div><a href="">Contact Us</a></div>
@@ -292,7 +302,7 @@
 
         <div class="flex flex-col">
             <p>Follow Us</p>
-            <div class="flex flex-row gap-2">
+            <div class="flex flex-row gap-4 lg:gap-2">
                 <div><i class="fa-brands fa-facebook"></i></div>
                 <div><i class="fa-brands fa-instagram"></i></div>
                 <div><i class="fa-brands fa-linkedin"></i></div>
